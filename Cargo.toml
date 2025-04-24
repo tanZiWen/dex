@@ -1,0 +1,9 @@
+[package]
+name = "dex"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+placeholder_project_name_placeholder_transitioner = { path = "../transitioner" }
+placeholder_project_name_placeholder_zk = { path = "../zk/plonky2" }
+placeholder_project_name_placeholder_sdk = { path = "../sdk" }
