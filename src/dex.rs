@@ -294,6 +294,9 @@ static WITHDRAW_SWAP_AUTH: LazyLock<Contract> = LazyLock::new(|| {
     let zero = builder.constant_zeros();
     let key_receiver = builder.hash2to1(inbox_item, zero);
     let receiver = builder.contslotitem(root, key_receiver);
+    let three = builder
+    let key_nonce = builder.hash2to1(inbox_item, three);
+    let nonce = builder.contslotitem(root, key_receiver);
 
     let hkey_1=  builder.hash2to1(hkey_prefix_inbox, this_addr);
     let hkey_2=  builder.hash2to1(receiver, nonce);
